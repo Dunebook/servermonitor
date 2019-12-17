@@ -1,0 +1,20 @@
+{
+  "name": "duneserver",
+  "version": "1.0.0",
+  "description": "Realtime server monitoring app with Angular 4 ,  NodeJS & d3 js",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever start index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "epoch-charting": "^0.8.4",
+    "nodemon": "~1.11.0",
+    "os-monitor": "~1.0.5",
+    "socket.io": "~2.0.3"
+  }
+}

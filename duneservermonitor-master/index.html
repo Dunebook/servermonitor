@@ -1,0 +1,9 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script>
+  var socket = io.connect('192.168.50.4:8000');
+  socket.on('update', function (data) {
+    console.log(data);
+    socket.emit('my other event', { my: 'data' });
+  });
+</script>
+      
